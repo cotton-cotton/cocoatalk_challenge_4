@@ -1,0 +1,92 @@
+/** @format */
+
+@keyframes coding {
+	0% {
+		transform: rotate(0);
+	}
+	25% {
+		transform: rotateZ(180deg);
+	}
+	75% {
+		transform: rotateZ(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes study {
+	0% {
+		transform: scaleY(1);
+	}
+	25% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(2);
+	}
+	75% {
+		transform: scaleY(1);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+html {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+body {
+	width: 800px;
+	height: 800px;
+	background-color: rgb(117, 221, 195);
+}
+.first {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 230px;
+	margin-bottom: 0px;
+	animation: coding 1s ease-in-out infinite;
+}
+.dot {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 80%;
+	margin: 30px;
+}
+.second {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 160px;
+}
+.square {
+	width: 18px;
+	height: 90px;
+	background-color: white;
+	margin: 6px;
+}
+.one {
+	animation: study 1s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+	animation-delay: 0s;
+}
+.two {
+	animation: study 1s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+	animation-delay: 0.1s;
+}
+.three {
+	animation: study 1s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+	animation-delay: 0.2s;
+}
+.four {
+	animation: study 1s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+	animation-delay: 0.3s;
+}
+.five {
+	animation: study 1s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+	animation-delay: 0.4s;
+}
